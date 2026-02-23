@@ -65,7 +65,7 @@ async fn push(State(s): State<Arc<AppState>>, Json(req): Json<PushRequest>) -> J
     Json(PushResponse {
         asset_id: uuid::Uuid::new_v4().to_string(), path: req.path.clone(), status: "deployed".into(),
         regions_deployed: regions, ttl_secs: ttl,
-        edge_url: format!("https://cdn.alice-platform.com{}", req.path),
+        edge_url: format!("https://cdn.alicelaw.net{}", req.path),
     })
 }
 
