@@ -1,5 +1,5 @@
 apiVersion: v2
-name: alice-cdn-saas
+name: alice-cdn
 description: ALICE CDN
 type: application
 version: 0.1.0
